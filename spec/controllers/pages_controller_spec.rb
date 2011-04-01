@@ -22,7 +22,7 @@ describe PagesController do
     end
   
   it "should have the right title" do
-      get 'home'
+      get 'contact'
       response.should have_selector("title",
                         :content => "Ruby on Rails Tutorial Sample App | Home")
     end
@@ -34,7 +34,7 @@ describe PagesController do
       response.should be_success
     end
       it "should have the right title" do
-      get 'home'
+      get 'about'
       response.should have_selector("title",
                         :content => "Ruby on Rails Tutorial Sample App | Home")
     end
